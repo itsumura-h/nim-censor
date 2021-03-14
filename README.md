@@ -17,17 +17,17 @@ suite "sample suit1":
   setup:
     discard "this is set up"
     
-   test "test1":
-     discard """
+  test "test1":
+    discard """
       output: "test1"
-     """
-     echo "test1"
+    """
+    echo "test1"
      
-   test "test2":
-     discard """
-       input: "hello world"
-     """
-     doAssert stdin.readline == "hello world"
+  test "test2":
+    discard """
+      input: "hello world"
+    """
+    doAssert stdin.readline == "hello world"
 ```
 
 ↓ Compile to like this
